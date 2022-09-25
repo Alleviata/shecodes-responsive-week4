@@ -11,7 +11,7 @@ body {
 .hero {
   background: var(--secondary-color);
   text-align: center;
-  padding: 160px 20px;
+  padding: 140px 20px;
 }
 
 .hero p {
@@ -31,7 +31,6 @@ h2 {
 }
 
 p {
-  background: var(--secondary-color);
   border-radius: 4px;
   font-size: 18px;
   font-weight: normal;
@@ -39,7 +38,7 @@ p {
   text-align: center;
 }
 
-.contact-link {
+.btn-contact {
   background: #1ac93c;
   padding: 0 25px;
   margin-top: 20px;
@@ -55,6 +54,46 @@ p {
   white-space: nowrap;
   border: none;
 }
-.btn-primary {
-  --bs-btn-hover-bg: #1ac93c;
+
+.btn-contact:hover {
+  background: white !important;
+  color: var(--primary-color) !important;
+  border: 1px solid;
+  border-color: var(--primary-color) !important;
+}
+
+.btn-contact-outline {
+  background: white !important;
+  color: var(--primary-color) !important;
+  border: 1px solid;
+  border-color: var(--primary-color) !important;
+  padding: 0 25px;
+  margin-top: 20px;
+  height: 46px;
+  line-height: 46px;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  border-radius: 10px;
+  text-transform: uppercase;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+@media (max-width: 576px) {
+  h1 {
+    font-size: 48px;
+  }
+  h2 {
+    font-size: 18px;
+  }
+
+  .img-home {
+    display: none;
+  }
+
+  .btn-contact-outline {
+    display: block;
+    text-align: center;
+  }
 }
