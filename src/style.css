@@ -93,7 +93,39 @@ p {
   padding: 140px 20px;
 }
 
-@media (max-width: 768px) {
+.logo {
+  max-width: 150px;
+}
+
+nav {
+  padding: 25px;
+}
+
+nav ul {
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  display: inline;
+  list-style: none;
+  line-height: 40px;
+}
+
+nav a {
+  margin-left: 10px;
+  text-decoration: none;
+  transition: all 150ms ease-in-out;
+  color: black;
+}
+
+nav a:hover,
+nav a.active {
+  border-bottom: 2px solid var(--primary-color);
+  color: #000;
+}
+
+@media (max-width: 767px) {
   h1 {
     font-size: 48px;
   }
@@ -103,6 +135,22 @@ p {
 
   .img-home {
     display: none;
+  }
+
+  nav img {
+    display: none;
+  }
+  nav .container {
+    display: flex;
+    justify-content: right !important;
+  }
+
+  nav a {
+    font-size: 12px;
+  }
+
+  nav li {
+    line-height: 25px;
   }
 }
 
