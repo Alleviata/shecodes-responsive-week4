@@ -11,7 +11,7 @@ body {
 .hero {
   background: var(--secondary-color);
   text-align: center;
-  padding: 140px 20px;
+  padding: 100px 20px;
 }
 
 .hero p {
@@ -96,7 +96,15 @@ p {
 
 .content-hero {
   text-align: center;
-  padding: 140px 20px;
+  padding: 80px 20px;
+}
+
+.content-hero a {
+  color: black;
+  text-decoration: none;
+}
+.content-hero a:hover {
+  border-bottom: 2px solid var(--primary-color);
 }
 
 .logo {
@@ -151,8 +159,13 @@ footer .email-link {
   color: black;
   font-size: 24px;
 }
-footer .email-link:hover {
+footer .email-link:hover,
+footer .git-link:hover {
   border-bottom: 2px solid var(--primary-color);
+}
+footer .git-link {
+  text-decoration: none;
+  color: black;
 }
 
 footer .social-links a {
