@@ -36,6 +36,12 @@ h3 {
   margin-top: 2%;
 }
 
+h4 {
+  font-family: "Roboto Slab", serif;
+  font-weight: bold;
+  font-size: 36px;
+}
+
 p {
   border-radius: 4px;
   font-size: 18px;
@@ -43,10 +49,10 @@ p {
   line-height: 1.5;
   text-align: center;
 }
+
 .btn-contact,
 .btn-contact-outline {
   padding: 0 25px;
-  margin-top: 20px;
   height: 50px;
   line-height: 50px;
   font-size: 15px;
@@ -125,6 +131,45 @@ nav a.active {
   color: #000;
 }
 
+footer {
+  margin: 50px 0;
+}
+
+footer .contact-box {
+  background-color: var(--secondary-color);
+  padding: 40px 110px;
+  margin-bottom: 30px;
+}
+
+.contact-box p {
+  text-align: left;
+  margin-bottom: 0;
+}
+
+footer .email-link {
+  text-decoration: none;
+  color: black;
+  font-size: 24px;
+}
+footer .email-link:hover {
+  border-bottom: 2px solid var(--primary-color);
+}
+
+footer .social-links a {
+  margin: 0 20px;
+  color: var(--primary-color);
+  background: rgba(175, 239, 165, 0.5);
+  padding: 10px 17px;
+  font-size: 25px;
+  border-radius: 50%;
+  transition: all 150ms ease-in-out;
+}
+
+footer .social-links a:hover {
+  color: white;
+  background-color: var(--primary-color);
+}
+
 @media (max-width: 767px) {
   h1 {
     font-size: 48px;
@@ -151,6 +196,24 @@ nav a.active {
 
   nav li {
     line-height: 25px;
+  }
+
+  footer .contact-box {
+    padding: 20px;
+    margin-bottom: 30px;
+  }
+
+  h4 {
+    font-size: 14px;
+  }
+
+  .contact-box p {
+    font-size: 12px;
+    margin-bottom: 0;
+  }
+
+  .contact-box .btn-contact {
+    font-size: 12px;
   }
 }
 
